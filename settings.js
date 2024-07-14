@@ -7,7 +7,7 @@ function convertToBool(text, fault = 'true') {
 
 global.thumb = fs.readFileSync('./lib/bugs/venom.jpg')
 const BOTNAME = 'SHaYan-MD|-WA-BOT™';
-const FOOTERNAME = '> ＶＡＪＩＲＡ -  ＭＤ - Ｖ4';
+const FOOTERNAME = '> SHAYAN -  ＭＤ - Ｖ4';
 global.owner = process.env.OWNER_NUMBER  || '923140529832' ;  // ADD YOUR NUMBER WITHOUT +
     
 module.exports = {
@@ -24,7 +24,7 @@ PREFIX: process.env.PREFIX || '.' ,
 LANG:  process.env.LANG || 'SI' ,
 ANTI_BAD: process.env.ANTI_BAD || true ,
 AUTO_REACT:  process.env.AUTO_REACT  || true  ,    
-AUTO_TYPING:  process.env.AUTO_TYPING  || false  ,
+AUTO_TYPING:  process.env.AUTO_TYPING  || true  ,
 AUTO_RECORDING:  process.env.AUTO_RECORDING  || true  ,
 AUTO_READ:  process.env.AUTO_READ  || false  ,
 AUTO_BIO:  process.env.AUTO_BIO  || false  ,       
@@ -35,15 +35,15 @@ HEROKU_APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HE
 INBOX_USER: process.env.INBOX_USER === undefined ? '' : process.env.INBOX_USER,
 BANNED_USER: process.env.BANNED_USER === undefined ? '' : process.env.BANNED_USER ,    
 AI_MODE: process.env.AI_MODE === undefined ? 'true' : process.env.AI_MODE,
-ANTI_LINK: process.env.ANTI_LINK || false  ,
-BOT_DETECT: process.env.BOT_DETECT === undefined ? 'false' : process.env.BOT_DETECT,    
+ANTI_LINK: process.env.ANTI_LINK || true  ,
+BOT_DETECT: process.env.BOT_DETECT === undefined ? 'true' : process.env.BOT_DETECT,    
 ANTI_BOT: process.env.ANTI_BOT || true  ,
 ANTI_CALL: process.env.ANTI_CALL || false  ,
 ALIVE: process.env.ALIVE || `default`,     
-AUTO_STATUS_READ:  process.env.AUTO_STATUS_READ  || false  ,    
+AUTO_STATUS_READ:  process.env.AUTO_STATUS_READ  || true  ,    
 AUTO_VOICE:  process.env.AUTO_VOICE  || true  ,
-AUTO_STICKER: process.env.AUTO_STICKER || false  ,
+AUTO_STICKER: process.env.AUTO_STICKER || true  ,
 WELCOME:  process.env.WELCOME  || true ,
-ANTI_DELETE : process.env.ANTI_DELETE || false ,
+ANTI_DELETE : process.env.ANTI_DELETE || true ,
 DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '' : process.env.DELETEMSGSENDTO    
 };
